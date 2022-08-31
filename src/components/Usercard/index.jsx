@@ -20,6 +20,7 @@ function Usercard({user}) {
         fetchRepos();
     },[user])
 console.log(userData)
+
     return (
         <div id='container'>
             <h2>{userData.login}</h2>
