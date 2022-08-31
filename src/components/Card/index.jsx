@@ -3,14 +3,14 @@ import axios from 'axios';
 
 
 function Card({user}) {
-    const [userData, setUserData] = useState([])
+    const [repoData, setRepoData] = useState([])
 
     useEffect(() => {
         async function fetchRepos() {
             if(user) {
                 const result = await axios.get(`https://api.github.com/users/${user}/repos`)            
                 console.log(result.data)
-                setUserData(result.data)
+                setRepoData(result.data)
             } else {
                 return;
             } 
@@ -20,17 +20,15 @@ function Card({user}) {
 
     return (
         <>
-        
-            <h3>{userData.name}</h3>
-            <div>
-                <h4>Open issues: {userData.open_issues_count}</h4>
-                <h4>Stargazers: {userData.stargazers_count}</h4>
-                <h4>Forks: {userData.forks_count}</h4>
-            </div>
+        {repoData.map((r) => <h3>{r.name}</h3>
+            // <div>
+            //     <h4>Open issues: {r.Data.open_issues_count}</h4>
+            //     <h4>Stargazers: {r.stargazers_count}</h4>
+            //     <h4>Forks: {r.forks_count}</h4>
+            // </div>
+            )} 
+        </> 
 
-        </>
-        
-        
     )
                 
 

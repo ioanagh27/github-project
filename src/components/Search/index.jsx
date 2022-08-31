@@ -45,7 +45,7 @@ function Search() {
                 <input type="submit" value="Search"/>
             </form>
             <Usercard user={username} />
-            <Card user={showData}/>
+            <Card user={username}/>
             
             {/* { showData.map((r) => <Card key={r.name} name={r.name} stargazers_count={r.stargazers_count} open_issues_count={r.open_issues_count} forks_count={r.forks_count}/>) } */}
     </>
