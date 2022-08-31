@@ -8,13 +8,14 @@ import './index.css'
 function Search() {
     
     const [username, setUsername] = useState("");
-    const [showData, setShowData] = useState("");
+    const [showData, setShowData] = useState([]);
     const [error, setError] = useState('');
     const [inputValue, setInputValue] = useState('');
 
     function handleInput(e) {
         const newInput = e.target.value;
         setInputValue(newInput);
+        setUsername('')
     }
 
     function handleSubmit(e) {
@@ -35,7 +36,7 @@ function Search() {
         //     setError(err)
         // }
     }
-
+ console.log(showData)
 
     return (
     <>

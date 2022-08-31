@@ -22,7 +22,7 @@ function Usercard({user}) {
 console.log(userData)
     return (
         <div id='container'>
-            <h3>{userData.login}</h3>
+            <h2>{userData.login}</h2>
             <div id='user'>
                 <img src={userData.avatar_url} alt=''/>
                 <a href={userData.html_url}>GitHub</a>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState }  from 'react';
 import axios from 'axios';
+import './index.css'
 
 
 function Card({user}) {
@@ -18,14 +19,26 @@ function Card({user}) {
         fetchRepos();
     },[user])
 
+function display() {
+    let x = document.getElementById('display');
+    if(x.style.display === "block") {
+        x.style.display = "none"
+    } else {
+        x.style.display = "block"
+    }
+}
+
     return (
         <>
-        {repoData.map((r) => <h3>{r.name}</h3>
-            // <div>
-            //     <h4>Open issues: {r.Data.open_issues_count}</h4>
-            //     <h4>Stargazers: {r.stargazers_count}</h4>
-            //     <h4>Forks: {r.forks_count}</h4>
-            // </div>
+        {repoData.map((r) => <div className='cont'>
+                <button onClick={display} key={r.id}>{r.name}</button>
+                <div id='display'>
+                    <h4>Open issues: {r.open_issues_count}</h4>
+                    <h4>Stargazers: {r.stargazers_count}</h4>
+                    <h4>Forks: {r.forks_count}</h4>
+                </div>
+                
+             </div>
             )} 
         </> 
 

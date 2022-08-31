@@ -11,3 +11,7 @@
 a {
     padding: 30px;
 }
+
+img {
+    border-radius: 50%;
+}
