@@ -1,0 +1,23 @@
+form {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    background-color: rgb(240, 236, 236);
+    padding: 10px;
+    font-size: 16px;
+    height: 30px;
+        
+}
+
+#search-box {
+    border: 1px solid grey;
+    border-radius: 9px;
+    margin: 3px;
+    width: 200px;
+}
+
+input {
+    border: 1px solid grey;
+    border-radius: 9px;
+    margin: 3px;
+}
