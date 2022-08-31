@@ -15,7 +15,6 @@ function Search() {
     function handleInput(e) {
         const newInput = e.target.value;
         setInputValue(newInput);
-        setUsername('')
     }
 
     function handleSubmit(e) {

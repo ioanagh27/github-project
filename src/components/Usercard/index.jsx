@@ -27,7 +27,9 @@ console.log(userData)
             <div id='user'>
                 <img src={userData.avatar_url} alt=''/>
                 <a href={userData.html_url}>GitHub</a>
+                <em>{userData.bio}</em>
             </div>
+            
         </div>      
         
     )              
