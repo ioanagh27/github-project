@@ -1,0 +1,17 @@
+#container {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+#user {
+    padding: 30px;
+}
+
+a {
+    padding: 30px;
+}
+
+img {
+    border-radius: 50%;
+}

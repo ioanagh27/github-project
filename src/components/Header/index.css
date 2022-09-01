@@ -1,0 +1,14 @@
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
